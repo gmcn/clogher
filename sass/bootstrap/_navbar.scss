@@ -11,14 +11,14 @@
 .navbar {
   position: relative;
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
-  margin-bottom: $navbar-margin-bottom;
+  // margin-bottom: $navbar-margin-bottom;
   border: 1px solid transparent;
 
   // Prevent floats from breaking the navbar
   @include clearfix;
 
   @media (min-width: $grid-float-breakpoint) {
-    border-radius: $navbar-border-radius;
+    // border-radius: $navbar-border-radius;
   }
 }
 
@@ -162,10 +162,11 @@
 
 .navbar-brand {
   float: left;
-  padding: $navbar-padding-vertical $navbar-padding-horizontal;
+  padding: 25px 15px;
   font-size: $font-size-large;
   line-height: $line-height-computed;
-  height: $navbar-height;
+
+
 
   &:hover,
   &:focus {
@@ -174,6 +175,12 @@
 
   > img {
     display: block;
+
+    height: 75px;
+
+    @include md {
+      height: auto;
+    }
   }
 
   @media (min-width: $grid-float-breakpoint) {
@@ -198,7 +205,7 @@
   @include navbar-vertical-align(34px);
   background-color: transparent;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
+  border: none;
   border-radius: $border-radius-base;
 
   // We remove the `outline` here, but later compensate by attaching `:hover`
@@ -210,8 +217,9 @@
   // Bars
   .icon-bar {
     display: block;
-    width: 22px;
-    height: 2px;
+    background-color: $blue;
+    width: 33px;
+    height: 5px;
     border-radius: 1px;
   }
   .icon-bar + .icon-bar {
@@ -395,8 +403,9 @@
 
 // Default navbar
 .navbar-default {
-  background-color: $navbar-default-bg;
-  border-color: $navbar-default-border;
+  background-color: transparent;
+  // border-color: $navbar-default-border;
+  border-bottom: 1px solid $navbar-default-border;
 
   .navbar-brand {
     color: $navbar-default-brand-color;
@@ -413,8 +422,11 @@
 
   .navbar-nav {
     > li > a {
+      font-family: 'Montserrat', sans-serif;
       color: $navbar-default-link-color;
-
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 12px;
       &:hover,
       &:focus {
         color: $navbar-default-link-hover-color;

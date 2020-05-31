@@ -15,3 +15,51 @@ ul.nav li.menu-item-has-children:hover > ul.dropdown-menu {
     display: block !important;
   }
 }
+
+.post-type-archive-products, .single-products {
+  li.menu-item-124 {
+    border-top: 1px solid $blue;
+  }
+}
+
+.post-type-archive-sales-reports {
+  li.menu-item-203 {
+    border-top: 1px solid $blue;
+  }
+}
+
+
+header {
+  &.scrolled {
+    background: #fff !important;
+    transition: .5s;
+  }
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  .navbar-toggle {
+    margin-top: 45px;
+    @include md {
+      margin-top: 65px;
+    }
+  }
+  .menu-menu-1-container {
+    @include md {
+      padding-top: 65px;
+    }
+  }
+  li.current_page_item {
+    border-top: 1px solid $blue;
+  }
+  .navbar-right {
+    li > a {
+      display: inline-block;
+      @include md {
+        display: inline-block;
+        padding: 15px 0;
+      }
+    }
+
+  }
+}

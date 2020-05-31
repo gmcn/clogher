@@ -1,0 +1,188 @@
+.sales-rings {
+
+  &__single {
+
+    margin-bottom: 50px;
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      span {
+        display: block;
+      }
+      &:after {
+        height: 3px;
+        width: 40px;
+        background: #E1E1E1;
+        content: "";
+        display: block;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 1.8em;
+    }
+
+    a {
+      background-color: $blue;
+      color: #fff;
+      text-transform: uppercase;
+      border: 1px solid #000;
+      padding: 15px 20px;
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      &:hover {
+        background: #fff;
+        color: $blue;
+      }
+    }
+
+  }
+
+}
+
+.upcoming-auction {
+
+  margin-bottom: 50px;
+
+  &__single {
+
+    margin-bottom: 50px;
+
+    &__date {
+      margin-bottom: 0;
+      color: #ABABAB;
+      text-transform: uppercase;
+      span {
+        color: $blue;
+      }
+    }
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+
+      span {
+        display: block;
+      }
+      &:after {
+        height: 3px;
+        width: 40px;
+        background: #E1E1E1;
+        content: "";
+        display: block;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 1.8em;
+    }
+
+    a {
+      color: $blue;
+      font-weight: 600;
+    }
+
+  }
+
+  .pagination {
+    padding: 15px;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: $blue;
+    .current {
+      border-bottom: 1px solid $blue;
+    }
+    a {
+      color: #999999;
+      &:hover {
+        color: $blue;
+      }
+    }
+    h2 {
+      display: none;
+    }
+  }
+
+}
+
+.sales-report {
+
+  margin-bottom: 50px;
+
+  &__single {
+
+    margin-bottom: 30px;
+
+    &__date {
+      font-size: 16px;
+      margin-bottom: 0;
+      font-weight: 600;
+      color: #ABABAB;
+      text-transform: uppercase;
+      span {
+        color: $blue;
+      }
+    }
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      margin-top: 0;
+      font-weight: 600;
+      span {
+        display: block;
+      }
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 1.8em;
+    }
+
+    a {
+      color: $blue;
+      font-weight: 600;
+      &:hover {
+        color: #000;
+      }
+      &:after {
+        height: 3px;
+        width: 40px;
+        background: #E1E1E1;
+        content: "";
+        display: block;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+    }
+
+  }
+
+  .pagination {
+    padding: 15px;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: $blue;
+    .current {
+      border-bottom: 1px solid $blue;
+    }
+    a {
+      color: #999999;
+      &:hover {
+        color: $blue;
+      }
+    }
+    h2 {
+      display: none;
+    }
+  }
+
+}

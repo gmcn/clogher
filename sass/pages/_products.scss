@@ -1,0 +1,223 @@
+.product-loop {
+
+  margin-bottom: 50px;
+
+  p.title {
+    width: 100%;
+    font-size: 18px;
+    font-family: "Oswald", sans-serif;
+    color: $blue;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 15px;
+  }
+
+  &__right {
+    text-align: right;
+  }
+
+  &__products {
+    padding-top: 40px;
+  }
+
+  &__cats {
+    p.title {
+      margin-top: 50px;
+    }
+    img {
+      max-width: 100%;
+    }
+    h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      color: #999;
+      line-height: 1.4em;
+      margin-top: 0;
+      font-weight: 600;
+    }
+    p.price {
+      font-family: 'Oswald', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: $blue;
+      margin: 0;
+    }
+    ul {
+      list-style: none;
+      margin: 0 0 0 15px;
+      padding: 0;
+      li {
+        border-bottom: 1px dashed #ccc;
+        padding: 10px 0;
+        transition: .5s;
+        span {
+          float: right;
+          color: #999;
+          font-size: 13px;
+          margin-right: 10px;
+        }
+        &:hover {
+          background: rgba($blue, .3);
+          a {
+            color: #fff;
+          }
+          span {
+            color: #fff;
+          }
+        }
+        img {
+          margin-right: 5px;
+          margin-left: 5px;
+        }
+        a {
+          color: #666;
+        }
+      }
+    }
+    &__product {
+      border-bottom: 1px dashed #ccc;
+    }
+  }
+
+  &__single {
+
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 15px;
+
+    img {
+
+      width: 100%;
+
+    }
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 23px;
+      line-height: 1.4em;
+      margin-top: 0;
+      font-weight: 600;
+    }
+
+    p {
+      font-weight: 300;
+      line-height: 1.8em;
+    }
+
+    p.price {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 48px;
+      font-weight: 600;
+      color: $blue;
+      margin-top: 15px;
+      margin-bottom: 25px;
+    }
+
+    a {
+      background-color: $blue;
+      color: #fff;
+      text-transform: uppercase;
+      border: 1px solid #000;
+      padding: 15px 20px;
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      &:hover {
+        background-color: #fff;
+        color: $blue;
+      }
+    }
+
+  }
+
+  .pagination {
+    padding: 15px;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: $blue;
+    .current {
+      border-bottom: 1px solid $blue;
+    }
+    a {
+      color: #999999;
+      &:hover {
+        color: $blue;
+      }
+    }
+    h2 {
+      display: none;
+    }
+  }
+
+}
+
+.product-single {
+  padding: 50px 15px 120px;
+  &__nav {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    @include md {
+      right: 15px;
+    }
+    a {
+      display: inline-block;
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+  &__content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  p.enquiry {
+    color: #000;
+    weight: 600;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    a {
+      color: #000;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+  p.terms {
+    color: #1E3B6C;
+    a {
+      color: #1E3B6C;
+      font-weight: 700;
+    }
+  }
+  h1 {
+    margin-top: 25px;
+    font-weight: 600;
+    width: 80%;
+    @include md {
+      margin-top: 0;
+    }
+
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  img {
+    width: 100%;
+  }
+  p.price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: $blue;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  p {
+    line-height: 1.8em;
+  }
+}

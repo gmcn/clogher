@@ -48,11 +48,12 @@ textarea {
 a {
   color: $link-color;
   text-decoration: none;
+  transition: .5s;
 
   &:hover,
   &:focus {
     color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
+    text-decoration: none;
   }
 
   &:focus {

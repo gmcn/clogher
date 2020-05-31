@@ -4,7 +4,7 @@
 ===================================*/
 .bx-wrapper {
   position: relative;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
   padding: 0;
   *zoom: 1;
   -ms-touch-action: pan-y;
@@ -33,7 +33,6 @@ ul.bxslider {
   -moz-box-shadow: 0 0 5px #ccc;
   -webkit-box-shadow: 0 0 5px #ccc;
   box-shadow: 0 0 5px #ccc;
-  border: 5px solid #fff;
   background: #fff;
 }
 .bx-wrapper .bx-pager,
@@ -93,19 +92,19 @@ ul.bxslider {
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
   left: 10px;
-  background: url('images/controls.png') no-repeat 0 -32px;
+  background: url('images/bx-prev.svg') no-repeat;
 }
 .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-prev:focus {
-  background-position: 0 0;
+  background: url('images/bx-prev_hover.svg') no-repeat;
 }
 .bx-wrapper .bx-next {
   right: 10px;
-  background: url('images/controls.png') no-repeat -43px -32px;
+  background: url('images/bx-next.svg') no-repeat;
 }
 .bx-wrapper .bx-next:hover,
 .bx-wrapper .bx-next:focus {
-  background-position: -43px 0;
+  background: url('images/bx-next_hover.svg') no-repeat;
 }
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
@@ -113,9 +112,9 @@ ul.bxslider {
   margin-top: -16px;
   outline: 0;
   width: 32px;
-  height: 32px;
+  height: 47px;
   text-indent: -9999px;
-  z-index: 9999;
+  z-index: 1;
 }
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none;

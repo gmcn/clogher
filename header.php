@@ -24,12 +24,11 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'starting-theme' ); ?></a>
 
-	<header>
+	<header class="navbar-fixed-top">
 
 
-		<nav class="navbar navbar-default navbar-static-top">
+		<nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -41,7 +40,7 @@
           <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<?php $description = get_bloginfo( 'description', 'display' ); ?>
 
-						<img src="" alt=" <?php echo $description; /* WPCS: xss ok. */ ?>">
+						<img src="<?php echo get_template_directory_uri() ?>/images/logo.svg" alt=" <?php echo $description; /* WPCS: xss ok. */ ?>">
 
 					</a>
 
@@ -50,18 +49,27 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
 
+					<ul class="nav navbar-nav navbar-right hidden-md hidden-lg">
+						<li>
+							<a href="tel:028 8554 8279"><img src="<?php echo get_template_directory_uri() ?>/images/phone.svg" alt="Call"> 028 8554 8279</a> / <a href="tel:028 8554 8500">028 8554 8500</a>
+							<a href="https://www.facebook.com/Clogher-Valley-Livestock-Producers-363843867666519" target="_blank">	<img src="<?php echo get_template_directory_uri() ?>/images/facebook.svg" alt="Follow Us On Facebook"></a>
+						</li>
+          </ul>
+
 					<?php wp_nav_menu( array(
 							'theme_location' => 'menu-1',
 							'menu_id' => 'navbar',
 							'menu_class' => 'navbar-collapse mainnav',
-							'items_wrap' => '<ul id="" class="nav navbar-nav navbar-right">%3$s</ul>' ) );
+							'items_wrap' => '<ul id="" class="nav navbar-nav">%3$s</ul>' ) );
 							?>
 
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
-            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+          <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+						<li>
+							<a href="tel:028 8554 8279"><img src="<?php echo get_template_directory_uri() ?>/images/phone.svg" alt="Call"> 028 8554 8279</a> / <a href="tel:028 8554 8500">028 8554 8500</a>
+							<a href="https://www.facebook.com/Clogher-Valley-Livestock-Producers-363843867666519" target="_blank">	<img src="<?php echo get_template_directory_uri() ?>/images/facebook.svg" alt="Follow Us On Facebook"></a>
+						</li>
           </ul>
+
         </div><!--/.nav-collapse -->
       </div>
     </nav>
